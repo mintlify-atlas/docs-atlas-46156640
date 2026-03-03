@@ -1,0 +1,130 @@
+{
+  "projectType": "framework",
+  "projectName": "Bolna",
+  "projectDescription": "End-to-end open-source framework for building LLM-based voice AI agents and conversational applications",
+  "theme": "aspen",
+  "primaryColor": "#6366F1",
+  "lightColor": "#818CF8",
+  "darkColor": "#4F46E5",
+  "navigation": {
+    "tabs": [
+      {
+        "tab": "Documentation",
+        "groups": [
+          {
+            "group": "Get Started",
+            "pages": [
+              "introduction",
+              "quickstart",
+              "installation"
+            ]
+          },
+          {
+            "group": "Core Concepts",
+            "pages": [
+              "concepts/architecture",
+              "concepts/assistants",
+              "concepts/tasks",
+              "concepts/agent-types",
+              "concepts/pipelines"
+            ]
+          },
+          {
+            "group": "Guides",
+            "pages": [
+              "guides/creating-your-first-agent",
+              "guides/text-only-pipeline",
+              "guides/telephony-integration",
+              "guides/docker-setup",
+              "guides/environment-configuration"
+            ]
+          },
+          {
+            "group": "Providers",
+            "pages": [
+              "providers/overview",
+              "providers/transcribers",
+              "providers/llms",
+              "providers/synthesizers",
+              "providers/telephony"
+            ]
+          },
+          {
+            "group": "Agent Types",
+            "pages": [
+              "agent-types/overview",
+              "agent-types/simple-llm-agent",
+              "agent-types/graph-agent",
+              "agent-types/contextual-conversational-agent",
+              "agent-types/knowledgebase-agent",
+              "agent-types/extraction-agent",
+              "agent-types/summarization-agent",
+              "agent-types/webhook-agent"
+            ]
+          },
+          {
+            "group": "Extending Bolna",
+            "pages": [
+              "extending/custom-providers",
+              "extending/custom-telephony",
+              "extending/custom-agent-types"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "API Reference",
+        "groups": [
+          {
+            "group": "REST API",
+            "pages": [
+              "api-reference/introduction",
+              "api-reference/create-agent",
+              "api-reference/get-agent",
+              "api-reference/update-agent",
+              "api-reference/delete-agent",
+              "api-reference/list-agents"
+            ]
+          },
+          {
+            "group": "Python SDK",
+            "pages": [
+              "sdk/assistant",
+              "sdk/models",
+              "sdk/transcriber",
+              "sdk/synthesizer",
+              "sdk/llm-agent"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "keyFeatures": [
+    "Multi-provider support for ASR, LLM, and TTS",
+    "Telephony integration with Twilio, Plivo, Exotel",
+    "Streaming voice conversations over WebSockets",
+    "Graph-based conversational flows",
+    "Function calling and tool integration",
+    "Docker-based local development setup",
+    "Programmatic Python API",
+    "REST API for agent management"
+  ],
+  "publicApiSurface": [
+    "Assistant",
+    "Assistant.add_task()",
+    "Assistant.execute()",
+    "Transcriber",
+    "Synthesizer",
+    "LlmAgent",
+    "POST /agent",
+    "GET /agent/{agent_id}",
+    "PUT /agent/{agent_id}",
+    "DELETE /agent/{agent_id}",
+    "GET /all",
+    "SimpleLlmAgent",
+    "GraphAgent",
+    "ContextualConversationalAgent",
+    "KnowledgebaseAgent"
+  ]
+}
